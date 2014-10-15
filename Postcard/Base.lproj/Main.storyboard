@@ -67,7 +67,7 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="38" y="89" width="209" height="80"/>
+                                    <rect key="frame" x="38" y="129" width="209" height="40"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaI-Cn-ipl">
@@ -92,6 +92,15 @@
                                     <action selector="sendMessageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qe9-c3-vgI"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBn-Rs-SN2">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="38" y="89" width="209" height="40"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -102,6 +111,7 @@
                                 <exclude reference="OaA-rN-abd"/>
                                 <exclude reference="RaI-Cn-ipl"/>
                                 <exclude reference="DQ7-xJ-1n5"/>
+                                <exclude reference="pBn-Rs-SN2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -111,6 +121,7 @@
                                 <include reference="OaA-rN-abd"/>
                                 <include reference="RaI-Cn-ipl"/>
                                 <include reference="DQ7-xJ-1n5"/>
+                                <include reference="pBn-Rs-SN2"/>
                             </mask>
                         </variation>
                     </view>
@@ -118,6 +129,7 @@
                         <outlet property="enterMessageTextField" destination="RaI-Cn-ipl" id="ogm-xC-gmp"/>
                         <outlet property="enterNameTextField" destination="voc-ey-Smi" id="pqw-Xy-x56"/>
                         <outlet property="messageLabel" destination="OaA-rN-abd" id="jq6-wx-EdT"/>
+                        <outlet property="nameLabel" destination="pBn-Rs-SN2" id="vns-tf-IKX"/>
                         <outlet property="sendMessageButton" destination="DQ7-xJ-1n5" id="fbJ-jg-LEo"/>
                     </connections>
                 </viewController>
